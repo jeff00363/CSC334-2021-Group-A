@@ -5,7 +5,7 @@ const home = document.querySelector('.home');
 const courses = document.querySelector('.courses');
 const calendar = document.querySelector('.calendar');
 const assignments = document.querySelector('.assignments');
-const graded = document.querySelector('.graded');
+const grades = document.querySelector('.grades');
 
 
 // add event listeners to side buttons
