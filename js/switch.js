@@ -33,13 +33,12 @@ for (let i=0;i<sidebtns.length;i++){
     )
 }
 
+
 for (let i=0;i<course_pa.length;i++){
-    console.log(course_pa[i]);
     course_pa[i].addEventListener('click', cp_switch);
 }
 
 for (let i=0;i<course_p.length;i++){
-    console.log(course_p[i]);
     course_p[i].addEventListener('click', cp_switch);
 }
 
@@ -47,9 +46,7 @@ function cp_switch() {
     let active_p = document.querySelector('.course-panel-active');
     active_p.className = 'course-panel';
     let e = window.event;
-    e.target.className = 'course-panel-active';
-    // console.log(course_pa);
-    // console.log(course_p);
+    e.currentTarget.className = 'course-panel-active';
 }
 
 function hideSeek ()
