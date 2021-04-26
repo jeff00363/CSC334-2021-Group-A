@@ -40,6 +40,30 @@ i.active {
 .home .panel table{
     width: 75em;
 }
+
+#course-select {
+    display: flex;
+    border:1px solid black;
+}
+
+.qa, #qatr, #qatd{
+    background: #f1f1f1;
+    display: grid;
+    align-content: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: larger;
+    padding: 4px;
+    text-align: center;
+}
+.quick-access {
+    display: flex;
+}
+
+.gcourse{
+    display: flex;
+}
+
 .active {
     display: flex !important;
 }
@@ -55,8 +79,9 @@ i.active {
 .assignments {
     display: none;
 }
-.graded {
+.grades {
     display: none;
+    flex-direction: column;
 }
 .side-menu {
     text-align: center;
