@@ -51,3 +51,14 @@ function cp_switch() {
     // console.log(course_pa);
     // console.log(course_p);
 }
+
+function hideSeek ()
+{
+
+     $('.group').hide();
+    $('#hw1').show();
+    $('#current').change(function () {
+      $('.group').hide();
+      $('#'+$(this).val()).show();
+    })
+  }
