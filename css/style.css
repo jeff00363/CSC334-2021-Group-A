@@ -4,6 +4,17 @@
     padding: 0;
 }
 
+.course-panel {
+    padding: 10px;
+}
+
+.course-panel-active {
+    padding: 10px; 
+    border: 4px solid green; 
+    border-radius: 5px; 
+    background: aliceblue;
+}
+
 body {
     background: #f1f1f1;
     height: 100vh;
@@ -30,7 +41,7 @@ i.active {
     display: flex;
     background: lightslategray;
     color: lightgray;
-    width: 80rem;
+    width: 90vw;
     height: 200px;
     border-radius: 10px;
     justify-content: space-evenly;
@@ -38,7 +49,7 @@ i.active {
     text-align: center;
 }
 .home .panel table{
-    width: 75em;
+    width: 90vw;
 }
 
 #course-select {
@@ -115,9 +126,8 @@ i.active {
 }
 
 .content {
-    background: lightgray;
-    height: 100%;
     margin-left: 80px;
+    height: 100vh;
     padding-left: 20px;
     padding-top: 10px;
     display: flex;
