@@ -58,15 +58,15 @@ i.active {
 }
 
 .qa, #qatr, #qatd{
-    background: #f1f1f1;
+    background: #bdbbbb;
     display: grid;
     align-content: center;
-    border: 1px solid black;
     border-collapse: collapse;
     font-size: larger;
     padding: 4px;
     text-align: center;
 }
+
 .quick-access {
     display: flex;
 }
@@ -134,4 +134,16 @@ i.active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+button#links {
+
+    padding: 3%;
+    text-align: center;
+    font-style: oblique;
+    background-color: lightblue;
+    font-size: larger;
+    border-collapse: collapse;
+    
+
 }
