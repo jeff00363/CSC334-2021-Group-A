@@ -105,15 +105,15 @@
               <td style="display: flex; flex-direction: row; padding: 10px;">
 
                 <div class="course-panel">
-                  <p>Business 101 Spring</p>
                   <img src = /Photos/b101.jpg width="70"
                   height="40">
+                  <p>Business 101 Spring</p>
                 </div>
 
                 <div class="course-panel">
-                  <p>Business 101 Fall</p>
                   <img src = /Photos/b101.jpg width="70"
                   height="40">
+                  <p>Business 101 Fall</p>
                 </div>
 
               </td>
@@ -230,15 +230,15 @@
             <td style="display: flex; flex-direction: row; padding: 10px;">
 
               <div class="course-panel-active">
-                <p>Business 101 Spring</p>
                 <img src = /Photos/b101.jpg width="70"
                 height="40">
+                <p>Business 101 Spring</p>
               </div>
 
               <div class="course-panel">
-                <p>Business 101 Fall</p>
                 <img src = /Photos/b101.jpg width="70"
                 height="40">
+                <p>Business 101 Fall</p>
               </div>
             </td>
           </tr>
@@ -247,44 +247,36 @@
             <td>
               <div>
                 
-              <label for="todowork">Current Assignments:</label>
-                <select name="currentassingments" id="current">
+                <label for="currentassignments">Current Assignments:</label>
+                <select name="currentassignments" id="current">
                   <option value="hw1">Homework 1</option>
                   <option value="hw2">Homework 2</option>
                   <option value="essay1">Essay 1</option>
                 </select>
                 
-              <div>
-                <div id = "hw1" class="group">
-                  <iframe  src="https://onedrive.live.com/embed?cid=A1A5867A82F063F3&amp;resid=A1A5867A82F063F3%21106&amp;authkey=AE9AWTpA154nMlQ&amp;em=2" width="750px" height="750px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>             
-                </div>
+                <div>
+                  <div id="hw1" class="group">
+                    <iframe  src="https://onedrive.live.com/embed?cid=A1A5867A82F063F3&amp;resid=A1A5867A82F063F3%21106&amp;authkey=AE9AWTpA154nMlQ&amp;em=2" width="750px" height="750px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>             
+                  </div>
 
-                <div id = "hw2" class="group">
-                  <iframe src="https://onedrive.live.com/embed?cid=A1A5867A82F063F3&amp;resid=a1a5867a82f063f3%21111&amp;authkey=AKC2zGq_cCk-iq4&amp;em=2" width="750px" height="750px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>       
-                </div>
+                  <div id="hw2" class="group">
+                    <iframe src="https://onedrive.live.com/embed?cid=A1A5867A82F063F3&amp;resid=a1a5867a82f063f3%21111&amp;authkey=AKC2zGq_cCk-iq4&amp;em=2" width="750px" height="750px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>       
+                  </div>
 
-                <div id = "essay1" class="group">
-                  <iframe src="https://onedrive.live.com/embed?cid=A1A5867A82F063F3&amp;resid=a1a5867a82f063f3%21113&amp;authkey=ANiWGagA4ycvgsI&amp;em=2" width="750px" height="750px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                  <div id="essay1" class="group">
+                    <iframe src="https://onedrive.live.com/embed?cid=A1A5867A82F063F3&amp;resid=a1a5867a82f063f3%21113&amp;authkey=ANiWGagA4ycvgsI&amp;em=2" width="750px" height="750px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                  </div>
+                  
                 </div>
-                
-              </div>
 
               
 
               
-              <div style="text-align: center;">
-                  <button style="background-color: chocolate;">SUBMIT</button>
+                <div style="text-align: center;">
+                    <button style="background-color: chocolate;">SUBMIT</button>
+                </div>
               </div>
-            </div>
           </td>
-        
-          <!-- </tr>
-          <tr>
-            <td >
-              
-            </td>
-          </tr>
-           -->
         </table>
       </div>
 
@@ -294,16 +286,16 @@
             <tr>
               <td style="display: flex; flex-direction: row; padding: 10px;">
 
-                <div class="course-panel">
-                  <p>Business 101 Spring</p>
+                <div id='spring' class="course-panel">
                   <img src = /Photos/b101.jpg width="70"
                   height="40">
+                  <p>Business 101 Spring</p>
                 </div>
 
-                <div class="course-panel">
-                  <p>Business 101 Fall</p>
+                <div id='fall' class="course-panel">
                   <img src = /Photos/b101.jpg width="70"
                   height="40">
+                  <p>Business 101 Fall</p>
                 </div>
 
               </td>
@@ -313,7 +305,7 @@
               <td >
                 <div class="g-course">
 
-                  <table style="display: flex; flex-direction: row; padding: 20px; border:black; border-width:2px; border-style:solid;">
+                  <table class='fall' id='cntnt' style="display: none;">
                     <tr>
                       <td>
                         <div >
@@ -321,13 +313,94 @@
                             Graded Assignments
                           </h2>
                         </div>
+                        <br>
+                        <br>
                       </td>
                     </tr>
 
                     <tr>
-                      <th>Business 101</th>
-                      <th>Grade</th>
-                      <th>Total Points</th>
+                      <th>Business 101 Fall</th>
+                      <th>Earned</th>
+                      <th>Total</th>
+                    </tr>
+
+                    <tr>
+                      <td>Introduction Assignment</td>
+                      <td>20</td>
+                      <td>20</td>
+                    </tr>
+
+                    <tr>
+                      <td>Current Events</td>
+                      <td>17</td>
+                      <td>20</td>
+                    </tr>
+
+                    <tr>
+                      <td>Homework 1</td>
+                      <td>17</td>
+                      <td>10</td>
+                    </tr>
+
+                    <tr>
+                      <td>Homework 2</td>
+                      <td>13</td>
+                      <td>20</td>
+                    </tr>
+
+                    <tr>
+                      <td>Homework 3</td>
+                      <td>7</td>
+                      <td>10</td>
+                    </tr>
+
+                    <tr>
+                      <td>Homework 4</td>
+                      <td>9</td>
+                      <td>15</td>
+                    </tr>
+
+                    <tr>
+                      <td>Homework 5</td>
+                      <td>7</td>
+                      <td>10</td>
+                    </tr>
+
+                    <tr>
+                      <td>Project 1</td>
+                      <td>28</td>
+                      <td>40</td>
+                    </tr>
+
+                    <tr>
+                      <td>Exam 1</td>
+                      <td>38</td>
+                      <td>50</td>
+                    </tr>
+
+                    <tr>
+                      <td>Final</td>
+                      <td>47</td>
+                      <td>100</td>
+                    </tr>
+                  </table>
+                  <table class='spring' id='cntnt' style="display:none;">
+                    <tr>
+                      <td>
+                        <div >
+                          <h2 id='g-header'>
+                            Graded Assignments
+                          </h2>
+                        </div>
+                        <br>
+                        <br>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th>Business 101 Spring</th>
+                      <th>Earned</th>
+                      <th>Total</th>
                     </tr>
 
                     <tr>

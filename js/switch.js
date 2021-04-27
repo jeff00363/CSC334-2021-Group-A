@@ -8,6 +8,8 @@ const assignments = document.querySelector('.assignments');
 const grades = document.querySelector('.grades');
 const course_p = document.querySelectorAll('div.course-panel');
 const course_pa = document.querySelectorAll('div.course-panel-active');
+const grps = document.getElementsByClassName('group');
+const hw_dd = document.getElementsByName('currentassignments');
 
 // add event listeners to side buttons
 for (let i=0;i<sidebtns.length;i++){
@@ -44,18 +46,31 @@ for (let i=0;i<course_p.length;i++){
 
 function cp_switch() {
     let active_p = document.querySelector('.course-panel-active');
+    let cntnt_active = document.querySelectorAll('#cntnt');
+    // clear active
+    for (let i=0;i<cntnt_active.length;i++){
+        cntnt_active[i].style.display = 'none';
+        cntnt_active[i].className = cntnt_active[i].className.replace('shown', '');
+    }
     active_p.className = 'course-panel';
     let e = window.event;
     e.currentTarget.className = 'course-panel-active';
+    let x = document.getElementsByClassName(e.currentTarget.id);
+    x[0].style.display = 'flex';
+    x[0].className = x[0].className + ' shown';
+    console.log(x[0].id);
 }
 
-function hideSeek ()
-{
+for (let i=0;i<hw_dd.length;i++) {
+    hw_dd[i].addEventListener('click', hideSeek);
+}
 
-     $('.group').hide();
-    $('#hw1').show();
-    $('#current').change(function () {
-      $('.group').hide();
-      $('#'+$(this).val()).show();
-    })
-  }
+function hideSeek (){
+    for (let i=0;i<grps.length;i++){
+        grps[i].style.display = 'none';
+    }
+    let x = document.getElementById('current').value;
+    let y = document.getElementById(x);
+    y.style.display = 'flex';
+}
+
