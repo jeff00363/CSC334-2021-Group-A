@@ -132,3 +132,36 @@ function submitted (){
     y.innerHTML = 'Submitted';
 }
 
+// calc on load
+window.addEventListener('load', calc_grade());
+
+function calc_grade (){
+    /**
+     * 
+     * 
+     * This function calculates the grade of our completed class.
+     * 
+     */
+    let x = document.getElementsByClassName('count-me');
+    let y = document.getElementsByClassName('count-me-t');
+    let sum = 0;
+    let total = 0;
+    let avg = 0.0;
+
+    // earned points
+    for (let i=0;i<x.length;i++){
+        sum += isNaN(x[i].innerHTML) ? 0 : parseInt(x[i].innerHTML);
+    }
+
+    // total points
+    for (let i=0;i<y.length;i++){
+        total += isNaN(y[i].innerHTML) ? 0 : parseInt(y[i].innerHTML);
+    }
+
+    // average
+    avg = Math.round(sum/total*100);
+
+    // table select for grades and output
+    let tbl = document.querySelector("#cntnt");
+    tbl.innerHTML+=("<tr><th>Earned</th><th>Total</th></tr><tr><td>" + sum + "</td><td>"+ total +"</td></tr><tr></tr><tr><td>Average</td><td>"+ avg +"</td></tr>");
+}
