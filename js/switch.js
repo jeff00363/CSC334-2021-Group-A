@@ -71,6 +71,13 @@ function hideSeek (){
     }
     let x = document.getElementById('current').value;
     let y = document.getElementById(x);
+    let z = document.getElementById('confirm');
+    z.innerHTML = '';
     y.style.display = 'flex';
+}
+document.getElementById('sbtn').addEventListener('click', submitted);
+function submitted (){
+    let y = document.getElementById('confirm');
+    y.innerHTML = 'Submitted';
 }
 
