@@ -10,6 +10,7 @@ const course_p = document.querySelectorAll('div.course-panel');
 const course_pa = document.querySelectorAll('div.course-panel-active');
 const grps = document.getElementsByClassName('group');
 const hw_dd = document.getElementsByName('currentassignments');
+const h_icons = document.querySelectorAll('#p-i');
 
 // add event listeners to side buttons
 for (let i=0;i<sidebtns.length;i++){
@@ -162,6 +163,27 @@ function calc_grade (){
     avg = Math.round(sum/total*100);
 
     // table select for grades and output
-    let tbl = document.querySelector("#genius");
-    tbl.innerHTML+=("<table><tr><th>Earned</th><th>Total</th></tr><tr><td>" + sum + "</td><td>"+ total +"</td></tr><tr></tr><tr><td>Average</td><td>"+ avg +"</td></tr></table>");
+    let tbl = document.querySelector("#cntnt");
+    tbl.innerHTML+=("<tbody style='justify-content: center;'><tr><th>Earned</th><th>Total</th></tr><tr><td>" + sum + "</td><td>"+ total +"</td></tr><tr></tr><tr><td>Average</td><td>"+ avg +"</td></tr></tbody>");
+}
+
+//add event listeners to home icons
+for (let i=0;i<h_icons.length;i++){
+    if (i==0){
+        h_icons[i].addEventListener('click', function(){
+            document.querySelector('.nav-item>#home>i').click();
+        });
+    } else if (i==1){
+        h_icons[i].addEventListener('click', function(){
+            document.querySelector('.nav-item>#courses>i').click();
+        });
+    }else if (i==3){
+        h_icons[i].addEventListener('click', function(){
+            document.querySelector('.nav-item>#grades>i').click();
+        });
+    }else if (i==4){
+        h_icons[i].addEventListener('click', function(){
+            document.querySelector('.nav-item>#assignments>i').click();
+        });
+    }
 }
