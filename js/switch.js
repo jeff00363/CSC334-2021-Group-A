@@ -162,6 +162,6 @@ function calc_grade (){
     avg = Math.round(sum/total*100);
 
     // table select for grades and output
-    let tbl = document.querySelector("#cntnt");
-    tbl.innerHTML+=("<tr><th>Earned</th><th>Total</th></tr><tr><td>" + sum + "</td><td>"+ total +"</td></tr><tr></tr><tr><td>Average</td><td>"+ avg +"</td></tr>");
+    let tbl = document.querySelector("#genius");
+    tbl.innerHTML+=("<table><tr><th>Earned</th><th>Total</th></tr><tr><td>" + sum + "</td><td>"+ total +"</td></tr><tr></tr><tr><td>Average</td><td>"+ avg +"</td></tr></table>");
 }
