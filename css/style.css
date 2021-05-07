@@ -102,11 +102,13 @@ i.active {
 .assignments {
     display: none;
     height: 100vh;
+    justify-content: center;
 }
 .grades {
     display: none;
     flex-direction: column;
     height: 100vh;
+    justify-content: center;
 }
 .side-menu {
     text-align: center;
