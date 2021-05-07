@@ -204,9 +204,14 @@ button#links {
 }
 
 #c-labels{
-    background: #456;
-    border-radius: 20px;
     font-weight: bold;
+    padding: 10px;
+}
+
+#cl-item{
+    background: #456;
+    border-radius: 10px;
+    padding: 7px;
 }
 
 #c-labels>td:hover{
@@ -215,6 +220,7 @@ button#links {
 
 .panel>table>tbody>tr>th>i:hover{
     color: green !important;
+    cursor: pointer;
 }
 
 .panel>table>tbody>tr>th>i:active{
