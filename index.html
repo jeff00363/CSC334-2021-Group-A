@@ -14,31 +14,31 @@
   
   </head>
     <div>
-      <h1 class="header"><i style="padding: 0 10px;" class="fas fa-university fa-x"></i>SCSU Blackboard</h1>
+      <h1 class="header"><i style="padding: 0 10px;" class="fas fa-university fa-x"></i>SCSU Learn</h1>
     </div>
   <div>
     <ul class="side-menu">
-      <li class="nav-item">
+      <li class="nav-item" id="n-home">
         <a id="home" href="#home">
           <i class="fas fa-home fa-3x active"></i>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" id="n-courses">
         <a id="courses" href="#courses">
           <i class="fas fa-book fa-3x"></i>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" id="n-calendar">
         <a id="calendar" href="#calendar">
           <i class="fas fa-calendar fa-3x"></i>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" id="n-assign">
         <a id="assignments" href="#assignments">
           <i class="fas fa-inbox fa-3x"></i>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" id="n-grades">
         <a id="grades" href="#grades">
           <i class="fas fa-check fa-3x"></i>
         </a>
@@ -54,30 +54,30 @@
               <th>
                 <h3>2</h3>
                 <br>
-                <i class="fas fa-home fa-3x" style="color: seashell;"></i>
+                <i id="p-i" class="fas fa-home fa-3x" style="color: linen;"></i>
               </th>
               <th>
                 <h3>0</h3>
                 <br>
-                <i class="fas fa-book fa-3x" style="color: salmon;"></i>
+                <i id="p-i" class="fas fa-book fa-3x" style="color: springgreen;"></i>
               </th>
               <th>
                 <h3>1hr 15min</h3>
                 <br>
-                <i class="fas fa-clock fa-3x" style="color: purple;"></i>
+                <i id="p-i" class="fas fa-clock fa-3x" style="color: purple;"></i>
               </th>
               <th>
                 <h3>3</h3>
                 <br>
-                <i class="fas fa-check-square fa-3x" style="color: springgreen;"></i>
+                <i id="p-i" class="fas fa-check-square fa-3x" style="color: springgreen;"></i>
               </th>
               <th>
                 <h3>5</h3>
                 <br>
-                <i class="fas fa-info-circle fa-3x" style="color: tomato;"></i>
+                <i id="p-i" class="fas fa-info-circle fa-3x" style="color: tomato;"></i>
               </th>
             </tr>
-            <tr>
+            <tr id="c-labels">
               <td>
                 In-Progress Courses
               </td>
@@ -175,7 +175,7 @@
 
       </div>
       <div class="calendar">
-        <iframe src="https://outlook.live.com/owa/calendar/9de489dc-1d7e-46df-8829-b30e4b37dcb4/e4691977-3e2d-4e10-bee1-cf28b9d070d1/cid-41A02F9C3A63927D/index.html" scrolling="no" width="700" height="400" frameborder="0"></iframe>
+        <iframe class="responsive-iframe" src="https://outlook.live.com/owa/calendar/9de489dc-1d7e-46df-8829-b30e4b37dcb4/e4691977-3e2d-4e10-bee1-cf28b9d070d1/cid-41A02F9C3A63927D/index.html" scrolling="no" width="700px" height="525px" frameborder="0"></iframe>
         
         <div class="quick-access">
 
@@ -308,15 +308,11 @@
 
                   <table class='fall' id='cntnt' style="display: none;">
                     <tr>
-                      <td>
-                        <div >
+                        <td colspan="3">
                           <h2 id='g-header'>
                             Graded Assignments
                           </h2>
-                        </div>
-                        <br>
-                        <br>
-                      </td>
+                        </td>
                     </tr>
 
                     <tr>
@@ -387,7 +383,7 @@
                   </table>
                   <table class='spring' id='cntnt' style="display:none;">
                     <tr>
-                      <td>
+                      <td colspan="3">
                         <div >
                           <h2 id='g-header'>
                             Graded Assignments
@@ -415,9 +411,6 @@
                       <td class='count-me'>18</td>
                       <td class='count-me-t'>20</td>
                     </tr>
-                    <div class= 'smart' id= 'genius'>
-
-                    </div>
                   </table>
                   
                 </div>
