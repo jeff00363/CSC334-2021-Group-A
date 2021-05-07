@@ -83,6 +83,8 @@ i.active {
 
 .gcourse{
     display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .active {
@@ -103,12 +105,14 @@ i.active {
     display: none;
     height: 100vh;
     justify-content: center;
+    text-align: center;
 }
 .grades {
     display: none;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
+    text-align: center;
 }
 .side-menu {
     text-align: center;
