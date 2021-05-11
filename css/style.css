@@ -113,6 +113,7 @@ i.active {
 .active {
     display: flex !important;
 }
+
 .home {
     display: none;
 }
@@ -144,7 +145,7 @@ i.active {
     border-color: #23A;
     background-color: #456;
     height: 100%;
-    overflow-x: hidden;
+    overflow-x: visible;
 }
 
 
@@ -166,6 +167,7 @@ i.active {
 }
 
 .content {
+    z-index: 1;
     margin-left: 80px;
     height: 100vh;
     padding-left: 20px;
@@ -194,6 +196,9 @@ button#links {
 }
 
 #cntnt>tbody>tr:nth-child(even){background: aliceblue;}
+#A-table>tbody>tr>td {padding: 10px;}
+#A-table>tbody:nth-child(1){color: linen;background: dodgerblue;}
+#A-table>tbody:nth-child(even){background: aliceblue;}
 
 .g-course{
     display: flex;
@@ -214,10 +219,6 @@ button#links {
     padding: 7px;
 }
 
-#c-labels>td:hover{
-    opacity: 0.5;
-}
-
 .panel>table>tbody>tr>th>i:hover{
     color: green !important;
     cursor: pointer;
@@ -226,3 +227,33 @@ button#links {
 .panel>table>tbody>tr>th>i:active{
     color: limegreen !important;
 }
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .tooltiptext{
+      font-size: medium;
+  }

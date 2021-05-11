@@ -20,27 +20,37 @@
     <ul class="side-menu">
       <li class="nav-item" id="n-home">
         <a id="home" href="#home">
-          <i class="fas fa-home fa-3x active"></i>
+          <i class="tooltip fas fa-home fa-3x active">
+            <span class="tooltiptext" style="top:-5px;left:105%;display: inline-block !important;">Home</span>
+          </i>
         </a>
       </li>
       <li class="nav-item" id="n-courses">
         <a id="courses" href="#courses">
-          <i class="fas fa-book fa-3x"></i>
+          <i class="tooltip fas fa-book fa-3x">
+            <span class="tooltiptext" style="top:-5px;left:105%;display: inline-block !important;">Courses</span>
+          </i>
         </a>
       </li>
       <li class="nav-item" id="n-calendar">
         <a id="calendar" href="#calendar">
-          <i class="fas fa-calendar fa-3x"></i>
+          <i class="tooltip fas fa-calendar fa-3x">
+            <span class="tooltiptext" style="top:-5px;left:105%;display: inline-block !important;">Calendar</span>
+          </i>
         </a>
       </li>
       <li class="nav-item" id="n-assign">
         <a id="assignments" href="#assignments">
-          <i class="fas fa-inbox fa-3x"></i>
+          <i class="tooltip fas fa-inbox fa-3x">
+            <span class="tooltiptext" style="top:-5px;left:105%;display: inline-block !important;">Assignments</span>
+          </i>
         </a>
       </li>
       <li class="nav-item" id="n-grades">
         <a id="grades" href="#grades">
-          <i class="fas fa-check fa-3x"></i>
+          <i class="tooltip fas fa-check fa-3x">
+            <span class="tooltiptext" style="top:-5px;left:105%;display: inline-block !important;">Grades</span>
+          </i>
         </a>
       </li>
     </ul>
@@ -52,14 +62,14 @@
           <table>
             <tr>
               <th>
-                <h3>2</h3>
+                <h3>1</h3>
                 <br>
-                <i id="p-i" class="fas fa-home fa-3x" style="color: linen;"></i>
+                <i id="p-i" class="fa fa-spinner fa-3x" style="color: linen;"></i>
               </th>
               <th>
-                <h3>0</h3>
+                <h3>1</h3>
                 <br>
-                <i id="p-i" class="fas fa-book fa-3x" style="color: springgreen;"></i>
+                <i id="p-i" class="fas fa-clipboard-check fa-3x" style="color: springgreen;"></i>
               </th>
               <th>
                 <h3>1hr 15min</h3>
@@ -266,6 +276,12 @@
                 <div style="text-align: center; padding: 10px;">
                   <button id='sbtn' style="background-color: chocolate; padding: 10px 20px;">SUBMIT</button>
                   <p style="color: green; padding: 10px;" id='confirm'></p>
+                  <table id='A-table' style="display: none; width: 100%; flex-direction: column;">
+                    <tr>
+                      <td>Assignment</td>
+                      <td>Date Submitted</td>
+                    </tr>
+                  </table>
               </div>
                 <div>
                   <div id="hw1" class="group">
@@ -294,6 +310,9 @@
       <div class="grades">
         <div class="gcourse">
           <table style="font-size: x-large;" >
+            <td>
+              <h2>Grades</h2>
+            </td>
             <tr>
               <td style="display: flex; flex-direction: row; padding: 10px;">
 
@@ -333,7 +352,9 @@
 
                     <tr>
                       <td>Introduction Assignment</td>
-                      <td class='count-me'>20</td>
+                      <td class='count-me tooltip'>20
+                        <span class="tooltiptext" style="top:-5px;left:105%;display: inline-block !important;">I also hike Indian Wells!</span>
+                      </td>
                       <td class='count-me-t'>20</td>
                     </tr>
 
@@ -375,7 +396,9 @@
 
                     <tr>
                       <td>Project 1</td>
-                      <td class='count-me'>28</td>
+                      <td class='tooltip count-me'>28
+                        <span class="tooltiptext" style="top:-5px;left:105%;display: inline-block !important;">See me for more comments</span>
+                      </td>
                       <td class='count-me-t'>40</td>
                     </tr>
 
