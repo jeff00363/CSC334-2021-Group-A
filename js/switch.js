@@ -114,7 +114,7 @@ function hideSeek (){
     let x = document.getElementById('current').value;
     let y = document.getElementById(x);
 
-    // feedback for submission
+    // clear feedback for submission
     let z = document.getElementById('confirm');
     z.innerHTML = '';
     y.style.display = 'flex';
@@ -126,11 +126,17 @@ document.getElementById('sbtn').addEventListener('click', submitted);
 /**
  * 
  * This displays Submitted after submit is pressed.
+ * Also makes an output for submitted assignment
  * 
  */
 function submitted (){
     let y = document.getElementById('confirm');
+    let x = document.getElementById('A-table');
+    let z = document.getElementById('current').value;
+    let D = new Date();
+    x.style.display = 'inline-block';
     y.innerHTML = 'Submitted';
+    x.innerHTML += '<tr><td>'+z+'</td><td>'+D+'</td></tr>';
 }
 
 // calc on load
@@ -171,9 +177,13 @@ function calc_grade (){
 for (let i=0;i<h_icons.length;i++){
     if (i==0){
         h_icons[i].addEventListener('click', function(){
-            document.querySelector('.nav-item>#home>i').click();
+            document.querySelector('.nav-item>#courses>i').click();
         });
     } else if (i==1){
+        h_icons[i].addEventListener('click', function(){
+            document.querySelector('.nav-item>#grades>i').click();
+        });
+    } else if (i==2){
         h_icons[i].addEventListener('click', function(){
             document.querySelector('.nav-item>#courses>i').click();
         });
@@ -187,3 +197,4 @@ for (let i=0;i<h_icons.length;i++){
         });
     }
 }
+
